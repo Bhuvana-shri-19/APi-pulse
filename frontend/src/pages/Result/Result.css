@@ -1,0 +1,103 @@
+.screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  transition: all 0.4s ease;
+}
+
+/* SUCCESS BACKGROUND */
+.success {
+  background: radial-gradient(circle, #43e97b, #38f9d7);
+}
+
+/* FAILURE BACKGROUND */
+.failure {
+  background: radial-gradient(circle, #ff6a6a, #ff3d3d);
+}
+
+/* CARD */
+.result-card {
+  background: white;
+  padding: 40px;
+  width: 420px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+/* EMOJI CARTOON */
+.emoji {
+  font-size: 70px;
+  margin-bottom: 10px;
+}
+
+/* HEADINGS */
+.result-card h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.result-card h2 {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.result-card p {
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
+.result-card button {
+  padding: 14px 28px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.result-card button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* 🎉 BLAST ANIMATION (SUCCESS) */
+.blast {
+  animation: pop 0.6s ease-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ❌ SHAKE ANIMATION (FAILURE) */
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-10px); }
+  40% { transform: translateX(10px); }
+  60% { transform: translateX(-10px); }
+  80% { transform: translateX(10px); }
+  100% { transform: translateX(0); }
+}

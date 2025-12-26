@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.screen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+}
+
+input, button {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.green { background: #00c853; color: white; }
+.red { background: #d50000; color: white; }
